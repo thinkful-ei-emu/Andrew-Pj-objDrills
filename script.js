@@ -58,47 +58,80 @@
 //   return newArray;
 // }
 
-const studentData = [
-  {
-    name: 'Tim',
-    status: 'Current student',
-    course: 'Biology',
-  },
-  {
-    name: 'Sue',
-    status: 'Withdrawn',
-    course: 'Mathematics',
-  },
-  {
-    name: 'Liz',
-    status: 'On leave',
-    course: 'Computer science',
-  },
-];
+// const studentData = [
+//   {
+//     name: 'Tim',
+//     status: 'Current student',
+//     course: 'Biology',
+//   },
+//   {
+//     name: 'Sue',
+//     status: 'Withdrawn',
+//     course: 'Mathematics',
+//   },
+//   {
+//     name: 'Liz',
+//     status: 'On leave',
+//     course: 'Computer science',
+//   },
+// ];
 
-function enrollInSummerSchool(students) {
-  for (let student of students){
-    student.status = 'In Summer School';
-  }
-  console.log(students);
-}
-enrollInSummerSchool(studentData);
+// function enrollInSummerSchool(students) {
+//   for (let student of students){
+//     student.status = 'In Summer School';
+//   }
+//   console.log(students);
+// }
+// enrollInSummerSchool(studentData);
 
 
 
-const scratchData = [
-  { id: 22, foo: 'bar' },
-  { id: 28, foo: 'bizz' },
-  { id: 19, foo: 'bazz' },
-];
+// const scratchData = [
+//   { id: 22, foo: 'bar' },
+//   { id: 28, foo: 'bizz' },
+//   { id: 19, foo: 'bazz' },
+// ];
 
-function findById(items, idNum) {
-  for(let item of items) {
-    if(item.id === idNum){
-      return item;
+// function findById(items, idNum) {
+//   for(let item of items) {
+//     if(item.id === idNum){
+//       return item;
+//     }
+//   }
+// }
+
+// console.log(findById(scratchData, 22));
+const objectA = {
+  id: 2,
+  name: 'Jane Doe',
+  age: 34,
+  city: 'Chicago',
+};
+
+// running the function with `objectB` and `expectedKeys`
+// should return `false`
+const objectB = {
+  id: 3,
+  age: 33,
+  city: 'Peoria',
+};
+
+const expectedKeys = ['id', 'name', 'age', 'city'];
+
+function validateKeys(object, expectedKeys) {
+  let keys = Object.keys(object);
+  
+  if (keys.length === expectedKeys.length) {
+    for (let i= 0; i < keys.length; i++){
+      if (keys[i] !== expectedKeys[i]){ 
+        return false;
+      }         
     }
+    return true;  
   }
-}
+  else {
+    return false;
+  }
 
-console.log(findById(scratchData, 22));
+}
 

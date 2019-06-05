@@ -78,10 +78,27 @@ const studentData = [
 
 function enrollInSummerSchool(students) {
   for (let student of students){
-    student.status = "In Summer School";
+    student.status = 'In Summer School';
   }
   console.log(students);
 }
 enrollInSummerSchool(studentData);
 
+
+
+const scratchData = [
+  { id: 22, foo: 'bar' },
+  { id: 28, foo: 'bizz' },
+  { id: 19, foo: 'bazz' },
+];
+
+function findById(items, idNum) {
+  for(let item of items) {
+    if(item.id === idNum){
+      return item;
+    }
+  }
+}
+
+console.log(findById(scratchData, 22));
 

@@ -185,3 +185,26 @@
 //   }
 // }
 
+const cypher = {
+  'a': 2,
+  'b': 3,
+  'c': 4,
+  'd': 5,
+};
+
+const message = 'craft block argon meter bells brown croon droop';
+function decode (word){    
+  let index= cypher[word[0]]
+  return index ? word[index-1] : " ";
+}
+
+function decodeWords (words){
+  let output= "";
+  let splitWords= words.split(" ");
+  for (let word of splitWords){
+    output+= decode(word);
+  }
+  return output;
+}
+console.log(decodeWords(message));
+

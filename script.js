@@ -162,11 +162,26 @@
 // };
 
 // console.log(Food.meals[3]);
-const objArray = [
-  {name: 'john', jobTitle: 'web developer'},
-  {name: 'mary', jobTitle: 'doctor'},
-  {name: 'mike', jobTitle: 'lawyer'},
-]
-for (let person of objArray){
-  console.log(`${person.name}: ${person.jobTitle}`);
-}
+// const objArray = [
+//   {name: 'john', jobTitle: 'web developer'},
+//   {name: 'mary', jobTitle: 'doctor'},
+//   {name: 'mike', jobTitle: 'lawyer'},
+// ]
+// for (let person of objArray){
+//   console.log(`${person.name}: ${person.jobTitle}`);
+// }
+
+// const objArray = [
+//   {name: 'john', jobTitle: 'web developer', boss: 'Fred'},
+//   {name: 'mary', jobTitle: 'doctor',boss: 'Fred'},
+//   {name: 'mike', jobTitle: 'lawyer', boss: 'Fred'},
+//   {name: 'Fred', jobTitle: 'The Boss'}
+// ];
+// for (let person of objArray){
+//   if(person.boss){
+//     console.log(`${person.jobTitle} ${person.name} reports to ${person.boss}`);
+//   } else {
+//     console.log(`${person.jobTitle} ${person.name} doesn't report to anybody.`);
+//   }
+// }
+

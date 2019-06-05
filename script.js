@@ -132,6 +132,15 @@ function validateKeys(object, expectedKeys) {
   else {
     return false;
   }
-
 }
 
+const loaf = {
+  flour: 300,
+  water: 210,
+  hydration: function() {
+    return (this.water / this.flour) * 100;
+  }
+}
+
+let drinkUp = loaf.hydration();
+console.log(drinkUp);

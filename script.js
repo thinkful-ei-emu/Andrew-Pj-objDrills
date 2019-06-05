@@ -48,3 +48,12 @@ function keyDeleter(obj) {
   delete obj.bar;
   return obj;
 }
+
+function makeStudentsReport(data) {
+  let newArray = [];
+  for(let i = 0; i < data.length; i++) {
+    newArray.push(`${data[i].name}: ${data[i].grade}`);
+  }
+  console.log(newArray);
+  return newArray;
+}

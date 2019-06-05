@@ -101,46 +101,59 @@
 // }
 
 // console.log(findById(scratchData, 22));
-const objectA = {
-  id: 2,
-  name: 'Jane Doe',
-  age: 34,
-  city: 'Chicago',
-};
+// const objectA = {
+//   id: 2,
+//   name: 'Jane Doe',
+//   age: 34,
+//   city: 'Chicago',
+// };
 
-// running the function with `objectB` and `expectedKeys`
-// should return `false`
-const objectB = {
-  id: 3,
-  age: 33,
-  city: 'Peoria',
-};
+// // running the function with `objectB` and `expectedKeys`
+// // should return `false`
+// const objectB = {
+//   id: 3,
+//   age: 33,
+//   city: 'Peoria',
+// };
 
-const expectedKeys = ['id', 'name', 'age', 'city'];
+// const expectedKeys = ['id', 'name', 'age', 'city'];
 
-function validateKeys(object, expectedKeys) {
-  let keys = Object.keys(object);
+// function validateKeys(object, expectedKeys) {
+//   let keys = Object.keys(object);
   
-  if (keys.length === expectedKeys.length) {
-    for (let i= 0; i < keys.length; i++){
-      if (keys[i] !== expectedKeys[i]){ 
-        return false;
-      }         
-    }
-    return true;  
-  }
-  else {
-    return false;
-  }
+//   if (keys.length === expectedKeys.length) {
+//     for (let i= 0; i < keys.length; i++){
+//       if (keys[i] !== expectedKeys[i]){ 
+//         return false;
+//       }         
+//     }
+//     return true;  
+//   }
+//   else {
+//     return false;
+//   }
+// }
+
+// const loaf = {
+//   flour: 300,
+//   water: 210,
+//   hydration: function() {
+//     return (this.water / this.flour) * 100;
+//   }
+// };
+
+// let drinkUp = loaf.hydration();
+// console.log(drinkUp);
+
+const funObject = {
+  foo: "valueFoo",
+  bar: "valueBar",
+  fum: "valueFum",
+  quux: "valueQuux",
+  spam: "valueSpam"
 }
 
-const loaf = {
-  flour: 300,
-  water: 210,
-  hydration: function() {
-    return (this.water / this.flour) * 100;
-  }
+for (let key in funObject){
+  console.log(key, funObject[key]);
 }
 
-let drinkUp = loaf.hydration();
-console.log(drinkUp);

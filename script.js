@@ -13,26 +13,38 @@
 // let call = createMyObject();
 // console.log(call);
 
-function updateObject(obj) {
-  obj.foo = "foo";
-  obj.bar = "bar";
-  obj.bizz = "bizz";
-  obj.bang = "bang";
+// function updateObject(obj) {
+//   obj.foo = "foo";
+//   obj.bar = "bar";
+//   obj.bizz = "bizz";
+//   obj.bang = "bang";
+//   return obj;
+// }
+
+// // let testCall = updateObject();
+
+// function personMaker() {
+//   var person = {
+//     firstName: 'Paul',
+//     lastName: 'Jones',
+//     // replace `null` with a function that uses self reference to return
+//     // full name
+//     fullName: function() {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//   };
+//   return person;
+// }
+
+const sampleObj = {
+  foo: 'foo',
+  bar: 'bar',
+  bizz: 'bizz',
+  bang: 'bang',
+};
+
+function keyDeleter(obj) {
+  delete obj.foo;
+  delete obj.bar;
   return obj;
 }
-
-// let testCall = updateObject();
-
-function personMaker() {
-  var person = {
-    firstName: 'Paul',
-    lastName: 'Jones',
-    // replace `null` with a function that uses self reference to return
-    // full name
-    fullName: function() {
-      return `${this.firstName} ${this.lastName}`;
-    },
-  };
-  return person;
-}
-

@@ -185,26 +185,75 @@
 //   }
 // }
 
-const cypher = {
-  'a': 2,
-  'b': 3,
-  'c': 4,
-  'd': 5,
-};
+// const cypher = {
+//   'a': 2,
+//   'b': 3,
+//   'c': 4,
+//   'd': 5,
+// };
 
-const message = 'craft block argon meter bells brown croon droop';
-function decode (word){    
-  let index= cypher[word[0]]
-  return index ? word[index-1] : " ";
-}
+// const message = 'craft block argon meter bells brown croon droop';
+// function decode (word){    
+//   let index= cypher[word[0]];
+//   return index ? word[index-1] : ' ';
+// }
 
-function decodeWords (words){
-  let output= "";
-  let splitWords= words.split(" ");
-  for (let word of splitWords){
-    output+= decode(word);
-  }
-  return output;
-}
-console.log(decodeWords(message));
+// function decodeWords (words){
+//   let output= '';
+//   let splitWords= words.split(' ');
+//   for (let word of splitWords){
+//     output+= decode(word);
+//   }
+//   return output;
+// }
+// console.log(decodeWords(message));
+
+
+// function createCharacter(name, nickname, race, origin, attack, defense) {
+//   return {
+//     name,
+//     nickname,
+//     race,
+//     origin,
+//     attack,
+//     defense,
+//     describe: function() {
+//       console.log(`${this.name} is a ${this.race} from ${this.origin}`);
+//     },
+//     evaluateFight: function(opponent) {
+//       console.log(`Your opponent takes ${Math.max(this.attack - opponent.defense,0)} damage and you recieve ${Math.max(opponent.attack - this.defense, 0)}`);
+//     }
+//   };
+// }
+
+// const Gandalf = createCharacter('Gandalf the White', 'gandalf', 'Wizard', 'Middle Earth', 10, 6);
+
+// const Baggins = createCharacter('Bilbo Baggins', 'bilbo','Hobbit','The Shire', 2, 1);
+
+// let Characters = [Gandalf,Baggins];
+
+// let search = Characters.find(function(character) {
+//   return character.nickname === 'gandalf';
+// });
+// // console.log(search.describe());
+
+// let hobbiters = Characters.filter(character => {
+//   return character.race === 'Hobbit';
+// });
+
+// // console.log(hobbiters);
+
+// let attAbove6 = Characters.filter(character => character.attack >= 6);
+
+// // console.log(attAbove6);
+
+// function equipWeapon(character, weapon) {
+//   character.weapon = weapon;
+//   character.describe = function() {
+//     console.log(`${this.name} is a ${this.race} from ${this.origin} who uses a ${this.weapon}`);
+//   };
+// }
+
+// equipWeapon(Gandalf,'wizard staff');
+// Gandalf.describe();
 

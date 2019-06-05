@@ -157,8 +157,16 @@
 //   console.log(key, funObject[key]);
 // }
 
-const Food = {
-  meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
-};
+// const Food = {
+//   meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+// };
 
-console.log(Food.meals[3]);
+// console.log(Food.meals[3]);
+const objArray = [
+  {name: 'john', jobTitle: 'web developer'},
+  {name: 'mary', jobTitle: 'doctor'},
+  {name: 'mike', jobTitle: 'lawyer'},
+]
+for (let person of objArray){
+  console.log(`${person.name}: ${person.jobTitle}`);
+}

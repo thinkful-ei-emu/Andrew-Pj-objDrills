@@ -145,15 +145,20 @@
 // let drinkUp = loaf.hydration();
 // console.log(drinkUp);
 
-const funObject = {
-  foo: "valueFoo",
-  bar: "valueBar",
-  fum: "valueFum",
-  quux: "valueQuux",
-  spam: "valueSpam"
-}
+// const funObject = {
+//   foo: "valueFoo",
+//   bar: "valueBar",
+//   fum: "valueFum",
+//   quux: "valueQuux",
+//   spam: "valueSpam"
+// }
 
-for (let key in funObject){
-  console.log(key, funObject[key]);
-}
+// for (let key in funObject){
+//   console.log(key, funObject[key]);
+// }
 
+const Food = {
+  meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+};
+
+console.log(Food.meals[3]);

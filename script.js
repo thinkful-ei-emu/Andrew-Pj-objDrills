@@ -36,24 +36,52 @@
 //   return person;
 // }
 
-const sampleObj = {
-  foo: 'foo',
-  bar: 'bar',
-  bizz: 'bizz',
-  bang: 'bang',
-};
+// const sampleObj = {
+//   foo: 'foo',
+//   bar: 'bar',
+//   bizz: 'bizz',
+//   bang: 'bang',
+// };
 
-function keyDeleter(obj) {
-  delete obj.foo;
-  delete obj.bar;
-  return obj;
-}
+// function keyDeleter(obj) {
+//   delete obj.foo;
+//   delete obj.bar;
+//   return obj;
+// }
 
-function makeStudentsReport(data) {
-  let newArray = [];
-  for(let i = 0; i < data.length; i++) {
-    newArray.push(`${data[i].name}: ${data[i].grade}`);
+// function makeStudentsReport(data) {
+//   let newArray = [];
+//   for(let i = 0; i < data.length; i++) {
+//     newArray.push(`${data[i].name}: ${data[i].grade}`);
+//   }
+//   console.log(newArray);
+//   return newArray;
+// }
+
+const studentData = [
+  {
+    name: 'Tim',
+    status: 'Current student',
+    course: 'Biology',
+  },
+  {
+    name: 'Sue',
+    status: 'Withdrawn',
+    course: 'Mathematics',
+  },
+  {
+    name: 'Liz',
+    status: 'On leave',
+    course: 'Computer science',
+  },
+];
+
+function enrollInSummerSchool(students) {
+  for (let student of students){
+    student.status = "In Summer School";
   }
-  console.log(newArray);
-  return newArray;
+  console.log(students);
 }
+enrollInSummerSchool(studentData);
+
+

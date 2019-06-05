@@ -21,4 +21,18 @@ function updateObject(obj) {
   return obj;
 }
 
-let testCall = updateObject()
+// let testCall = updateObject();
+
+function personMaker() {
+  var person = {
+    firstName: 'Paul',
+    lastName: 'Jones',
+    // replace `null` with a function that uses self reference to return
+    // full name
+    fullName: function() {
+      return `${this.firstName} ${this.lastName}`;
+    },
+  };
+  return person;
+}
+
